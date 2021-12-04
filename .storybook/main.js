@@ -4,9 +4,15 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-a11y",
+    // not working with storybook-builder-vite, import {fn} from jest-mock error
+    "@storybook/addon-interactions", // must be listed after @storybook/addon-actions or @storybook/addon-essentials.
   ],
   framework: "@storybook/react",
-  core: {
-    builder: "storybook-builder-vite",
+  // core: {
+  // builder: "storybook-builder-vite",
+  // },
+  features: {
+    // on demand
+    storyStoreV7: true,
   },
 };
