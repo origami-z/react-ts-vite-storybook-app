@@ -21,4 +21,10 @@ Example1.play = async ({ canvasElement }) => {
 
   const firstTask = await canvas.findByRole("checkbox", { name: "First todo" });
   await fireEvent.click(firstTask);
+
+  expect((firstTask as HTMLInputElement).checked).toEqual(true);
+  expect(
+    ((await canvas.findByRole("checkbox", { name: "Two" })) as HTMLInputElement)
+      .checked
+  ).toEqual(false);
 };
