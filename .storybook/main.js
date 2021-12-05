@@ -14,5 +14,7 @@ module.exports = {
   features: {
     // on demand
     storyStoreV7: true,
+    // https://storybook.js.org/addons/@storybook/addon-interactions
+    interactionsDebugger: true,
   },
 };
