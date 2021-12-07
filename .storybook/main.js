@@ -17,5 +17,6 @@ module.exports = {
     // https://storybook.js.org/addons/@storybook/addon-interactions
     interactionsDebugger: true,
   },
+  // without this , msw won't work in storybook
   staticDirs: ["../public"],
 };
