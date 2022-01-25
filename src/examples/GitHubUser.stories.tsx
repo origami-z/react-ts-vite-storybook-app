@@ -18,6 +18,7 @@ export default {
 };
 
 export const DefaultBehavior = () => <GitHubUser username="hamilton.elly" />;
+DefaultBehavior.decorators = [];
 
 export const LoadingState = () => <GitHubUser username="hamilton.elly" />;
 LoadingState.decorators = [
